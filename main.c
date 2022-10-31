@@ -52,23 +52,6 @@ int RandomArrayValues(){
 
 }
 
-void Pattern(int var){
-    
-    if (var%10 == 0){
-
-        printf("\n");
-        for (int i = 1; i <= 5; i++ ){
-            for (int j = 1; j <= i; j++){
-                printf("%c",'a' + j-1);
-            }
-        printf("\n");
-        }
-
-    }
-
-
-    
-}
 
 int main() {
     
@@ -77,11 +60,26 @@ int main() {
     s.var = RandomArrayValues();
 
     printf("var = %d \n",s.var);
+    
+    if (s.var%10 == 0 && s.var != 0)
+        goto pattern;
+    else
+        goto nopattern;
 
-    Pattern(s.var);
+    
+pattern:
+    printf("\n");
+    for (int i = 1; i <= 5; i++ ){
+        for (int j = 1; j <= i; j++){
+            printf("%c",'a' + j-1);
+        }
+    printf("\n");
+    }
+
+nopattern:
+    printf(" ");
 
 
 return 0;
 
 }
-
