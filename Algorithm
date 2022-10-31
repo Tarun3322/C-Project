@@ -1,0 +1,25 @@
+Algorithm:
+
+1. Declare a structure with just one 3D array of type int with size [4][3][2]
+
+2. Use rand() function to assign values to the array
+
+3. Access [2][2][2] element of the array using a pointer and assign it to a variable 'var'
+
+4. If var is divisible by 10, jump to a label called 'pattern' that prints
+ a
+ ab
+ abc
+ abcd
+abcde
+
+5. If var is even, invoke a function using function pointer that compares two strings recursively considering case sensitivity. Input strings from the user.
+
+6. If var is odd, invoke a fn using fn ptr that counts the occurances of a character in a string- take the string and character from user 
+
+Requirements:
+
+1. Use one file per function
+2. Compile using Makefile
+3. Execute using gdb
+4. Upload to github under branch name 'C Project'
